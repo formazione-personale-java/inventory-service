@@ -30,5 +30,9 @@ public class ProductController {
     public List<Post> allPosts(){
     return this.restClient.get().uri("posts").retrieve().body(new ParameterizedTypeReference<List<Post>>() {});
     }
+    @GetMapping("/products/{id}")
+    Produit getProductyId(){
+        return null ;
+    }
 }
 
